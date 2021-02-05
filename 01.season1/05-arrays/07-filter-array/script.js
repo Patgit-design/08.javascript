@@ -83,20 +83,32 @@
     //When you click the button, create a new 
     //array from the array people, containing only the people whose age is more than 18 years. 
     //Display the resulting array in the console.
-    let arr = [];
+    /* let arr = [];
+
+     document.getElementById("run").addEventListener("click", () => {
+
+         people.forEach(element => {
+
+             if (element.age >= 18) {
+
+                 arr.push(element);
+
+
+             }
+             console.log(element);*/
+
+    /*    let oldPeople = [];
+
+        });
+    });
+
+})();*/
 
     document.getElementById("run").addEventListener("click", () => {
 
-        people.forEach(element => {
+        let adult = people.filter(people => people.age > 18);
 
-            if (element.age >= 18) {
-
-                arr.push(element);
-
-
-            }
-            console.log(element);
-        });
+        console.log(adult);
     });
 
 })();
